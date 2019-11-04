@@ -1,0 +1,11 @@
+def palindrome(mot):
+        longueur = len(mot)
+        indice = 0
+        while indice<len(mot):
+            longueur = longueur - 1
+            if mot[indice]!=mot[longueur]: 
+                return "Pas un palindrome"
+            indice = indice + 1
+        return "palindrome"
+	
+print(palindrome("kayak"))
