@@ -1,0 +1,15 @@
+def coupable(mot):
+        if 'CATA' in mot:
+                if 'ATGC' in mot:
+                        if 'ATGCATA' in mot:
+                                return "Pas coupable"
+                        if 'CATATGC' in mot:
+                                return "Pas coupable"
+                return "coupable"
+        return "pas coupable"
+
+                        
+print("le colonel moutarde est " + coupable("CCTGGAGGGTGGCCCCACCGGCCGAGACAGCGAGCATATGCAGGAAGCGGCAGGAATAAGGAAAAGCAGCADN"))
+print("Mlle Rose est " + coupable("CTCCTGATGCTCCTCGCTTGGTGGTTTGAGTGGACCTCCCAGGCCAGTGCCGGGCCCCTCATAGGAGAGGADN"))
+print("Mme Pervenche " + coupable("AAGCTCGGGAGGTGGCCAGGCGGCAGGAAGGCGCACCCCCCCAGTACTCCGCGCGCCGGGACAGAATGCCADN"))
+print("M. Leblanc " + coupable("CTGCAGGAACTTCTTCTGGAAGTACTTCTCCTCCTGCAAATAAAACCTCACCCATGAATGCTCACGCAAG"))
