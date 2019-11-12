@@ -1,11 +1,9 @@
 def coupable(mot):
+        mot = mot.replace('ATGCATA', '')
+        mot = mot.replace('CATATGC', '')
         if 'CATA' in mot:
                 if 'ATGC' in mot:
-                        if 'ATGCATA' in mot:
-                                return "Pas coupable"
-                        if 'CATATGC' in mot:
-                                return "Pas coupable"
-                return "coupable"
+                        return "coupable"
         return "pas coupable"
 
                         
